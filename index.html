@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sneha S J — Full Stack Developer</title>
+<meta name="description" content="Sneha S J, Full Stack Developer in Bangalore. Node.js, Java Spring Boot, React, Angular, PostgreSQL.">
+<style>
+:root{--bg:#f7f8fb;--surf:#ffffff;--ink:#101828;--mute:#566074;--line:#e3e7ee;--acc:#2563eb;--accs:#e8effe;--grad:linear-gradient(120deg,#2563eb,#7c3aed);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0f19;--surf:#131a29;--ink:#eef1f7;--mute:#9aa6bd;--line:#232c3f;--acc:#6ea0ff;--accs:#17233f}}
+:root[data-theme="dark"]{--bg:#0b0f19;--surf:#131a29;--ink:#eef1f7;--mute:#9aa6bd;--line:#232c3f;--acc:#6ea0ff;--accs:#17233f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;letter-spacing:-.01em}
+.logo i{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav div a{margin-left:22px;font-size:14px;color:var(--mute);font-weight:500;transition:.2s}
+nav div a:hover{color:var(--acc)}
+@media(max-width:620px){nav div a:nth-child(n+4){display:none}}
+.hero{padding:92px 0 70px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:60px}}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--acc);background:var(--accs);padding:6px 14px;border-radius:99px}
+.pill b{width:8px;height:8px;border-radius:50%;background:#16a34a;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #16a34a88}100%{box-shadow:0 0 0 10px #16a34a00}}
+h1{font-size:clamp(36px,6vw,58px);line-height:1.08;letter-spacing:-.03em;margin:20px 0 16px}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mute);font-size:18px;max-width:540px;margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;font-size:15px;margin:0 10px 10px 0;border:1px solid var(--line);background:var(--surf);transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--acc)}
+.btn.p{background:var(--grad);color:#fff;border:0}
+.panel{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 10px 30px -18px #0004}
+.panel .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+.panel .row:last-child{border:0}
+.panel .row span{color:var(--mute)}
+.panel .row b{text-align:right}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.metric{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+.metric b{display:block;font-size:30px;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.metric small{color:var(--mute);font-size:13px}
+section{padding:64px 0}
+.eyebrow{font-size:13px;font-weight:700;color:var(--acc);text-transform:uppercase;letter-spacing:.1em}
+h2{font-size:clamp(26px,4vw,34px);letter-spacing:-.02em;margin:6px 0 30px}
+.rv{opacity:0;transform:translateY(24px);transition:.7s ease}
+.rv.in{opacity:1;transform:none}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.item{position:relative;padding:0 0 32px 28px}
+.item::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--surf);border:3px solid var(--acc)}
+.item h3{margin:0;font-size:18px}
+.item .meta{color:var(--mute);font-size:14px;margin:2px 0 8px}
+.item .meta b{color:var(--acc);font-weight:600}
+.item ul{margin:0;padding-left:18px;color:var(--mute)}
+.item li{margin-bottom:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.25s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:.35s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px #0006}
+.card:hover::before{transform:scaleX(1)}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0 0 16px;color:var(--mute);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:99px;background:var(--accs);color:var(--acc)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.sk .card h3{font-size:15px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute);margin-bottom:14px}
+.edu{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.contact{text-align:center}
+.contact p{color:var(--mute);max-width:520px;margin:0 auto 26px}
+.links a{display:inline-flex;align-items:center;gap:8px}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--mute);font-size:14px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">Sneha<i> S J</i></a><div><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+
+<main id="top" class="wrap">
+<header class="hero">
+<div>
+<span class="pill"><b></b>Available for full-time roles</span>
+<h1>Full Stack Developer building <span>reliable backends</span> and clean interfaces.</h1>
+<p class="lead">I design REST APIs and databases and ship them with React and Angular front ends. Based in Bangalore, currently at Qbic Catalyst Partners.</p>
+<a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Contact me</a>
+</div>
+<div class="panel">
+<div class="row"><span>Role</span><b>Junior Software Developer</b></div>
+<div class="row"><span>Company</span><b>Qbic Catalyst Partners</b></div>
+<div class="row"><span>Location</span><b>Bangalore, India</b></div>
+<div class="row"><span>Core stack</span><b>Node.js · Java · React</b></div>
+<div class="row"><span>Education</span><b>BE CSE (Honors), 2026</b></div>
+</div>
+</header>
+
+<div class="metrics rv">
+<div class="metric"><b data-n="100">0</b><small>REST endpoints built</small></div>
+<div class="metric"><b data-n="2">0</b><small>production platforms</small></div>
+<div class="metric"><b data-n="2">0</b><small>freelance clients</small></div>
+</div>
+
+<section id="about" class="rv"><div class="eyebrow">About</div><h2>Backend-first, comfortable across the stack</h2>
+<p style="max-width:720px;color:var(--mute)">I'm a Computer Science graduate (Honors) who joined Qbic Catalyst Partners as an intern and moved into a full-time developer role. I work mainly with Node.js, Express and PostgreSQL, and I've built projects in Java with Spring Boot, React, Angular and Python. I also enjoy data work with Power BI and practise problem solving on LeetCode.</p></section>
+
+<section id="experience"><div class="eyebrow">Experience</div><h2>Where I've worked</h2>
+<div class="tl">
+<div class="item rv"><h3>Junior Software Developer</h3><div class="meta"><b>Qbic Catalyst Partners</b> · Bangalore · Apr 2026 – Present</div>
+<ul><li>Built 100+ REST endpoints across 2 platforms, including an industry-based platform.</li><li>Worked with Node.js, Express.js and PostgreSQL, using Supabase for backend services.</li></ul></div>
+<div class="item rv"><h3>Associate Software Engineer (Intern)</h3><div class="meta"><b>Qbic Catalyst Partners</b> · Bangalore · Oct 2025 – Apr 2026</div>
+<ul><li>Joined the backend team and took on API development before moving to a full-time role.</li></ul></div>
+<div class="item rv"><h3>Freelance Developer</h3><div class="meta"><b>2 clients</b></div>
+<ul><li>Delivered projects end to end for two clients, including a climate-data project.</li></ul></div>
+<div class="item rv"><h3>Research Intern</h3><div class="meta"><b>SSN</b> · Jul – Aug 2024</div>
+<ul><li>Presented the research and wrote it up as an internal report.</li></ul></div>
+</div></section>
+
+<section id="projects"><div class="eyebrow">Projects</div><h2>Selected work</h2>
+<div class="grid">
+<div class="card rv"><h3>Industry Based Platform</h3><p>Backend platform at Qbic with a large REST API surface for day-to-day industry operations.</p><div class="tags"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Supabase</span></div></div>
+<div class="card rv"><h3>Educational App</h3><p>Learning app that pulls content through external APIs, with tests covering the core flows.</p><div class="tags"><span>Python</span><span>API calling</span><span>Testing</span></div></div>
+<div class="card rv"><h3>RentalEase Hub</h3><p>Full-stack rental platform built during the Infosys Springboard Java Full Stack internship.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span></div></div>
+<div class="card rv"><h3>Customer Churn Prediction</h3><p>Analytics project predicting which customers are likely to leave, from the Infosys Springboard Data Analytics internship.</p><div class="tags"><span>Python</span><span>Power BI</span></div></div>
+</div></section>
+
+<section id="skills"><div class="eyebrow">Skills</div><h2>Tools I use</h2>
+<div class="sk">
+<div class="card rv"><h3>Backend</h3><div class="tags"><span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Express.js</span><span>REST APIs</span></div></div>
+<div class="card rv"><h3>Frontend</h3><div class="tags"><span>React</span><span>Angular</span><span>JavaScript</span><span>HTML/CSS</span></div></div>
+<div class="card rv"><h3>Data</h3><div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>Supabase</span><span>Python</span><span>Power BI</span></div></div>
+</div></section>
+
+<section id="education"><div class="eyebrow">Education</div><h2>Academic background</h2>
+<div class="card edu rv"><div><h3 style="margin:0">BE, Computer Science and Engineering (Honors)</h3><span style="color:var(--mute)">Knowledge Institute of Technology, Salem</span></div><b>2022 – 2026</b></div></section>
+
+<section id="contact" class="contact rv"><div class="eyebrow">Contact</div><h2>Let's work together</h2>
+<p>I'm looking for full-stack and backend roles. The best way to reach me is by email or phone.</p>
+<div class="links"><a class="btn p" href="mailto:s.j.sneha2005@gmail.com">s.j.sneha2005@gmail.com</a><a class="btn" href="tel:+917904407706">+91 79044 07706</a><a class="btn" href="https://leetcode.com/u/sneha-s-j/" target="_blank" rel="noopener">LeetCode</a></div></section>
+</main>
+<footer>© Sneha S J</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+document.querySelectorAll('[data-n]').forEach(function(el){var n=+el.dataset.n,t=0;var iv=setInterval(function(){t+=Math.ceil(n/30);if(t>=n){t=n;clearInterval(iv)}el.textContent=t+(t===n&&n>50?'+':'')},40)});
+</script>
+</body>
+</html>
